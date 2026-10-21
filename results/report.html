@@ -1,0 +1,26 @@
+<!doctype html><meta charset="utf-8"><title>Experiment report</title><style>body{font:16px system-ui;max-width:1000px;margin:40px auto;background:#f3f6fc;color:#173254}table{border-collapse:collapse;width:100%}td,th{border:1px solid #bbb;padding:15px;text-align:left}pre{white-space:pre-wrap}th{width:25%}</style><h1>Reproducible experiment report</h1><p>Synthetic data; educational results, not production evidence.</p><table><tr><th>data</th><td><pre>"700 normal training, 250 normal validation, 400 test rows including 60 injected anomalies; five synthetic sensors"</pre></td></tr><tr><th>threshold</th><td><pre>0.019620611832701626</pre></td></tr><tr><th>test</th><td><pre>{
+  "accuracy": 0.9975,
+  "precision": 0.9836065573770492,
+  "recall": 1.0,
+  "f1": 0.9917355371900827,
+  "confusion_matrix": {
+    "tn": 339,
+    "fp": 1,
+    "fn": 0,
+    "tp": 60
+  }
+}</pre></td></tr><tr><th>always_normal_baseline</th><td><pre>{
+  "accuracy": 0.85,
+  "precision": 0,
+  "recall": 0.0,
+  "f1": 0,
+  "confusion_matrix": {
+    "tn": 340,
+    "fp": 0,
+    "fn": 60,
+    "tp": 0
+  }
+}</pre></td></tr><tr><th>score_summary</th><td><pre>{
+  "normal_mean": 0.004468385141704088,
+  "anomaly_mean": 1.5605930392274352
+}</pre></td></tr><tr><th>caveat</th><td><pre>"Detects deviations outside the learned subspace. In-subspace anomalies and drift can be missed; injected spikes are deliberately simple."</pre></td></tr></table>

@@ -1,0 +1,9 @@
+test_component_orthogonality (test_project.ProjectTests.test_component_orthogonality) ... ok
+test_full_rank_reconstruction (test_project.ProjectTests.test_full_rank_reconstruction) ... ok
+test_no_input_mutation (test_project.ProjectTests.test_no_input_mutation) ... ok
+test_spike_increases_error (test_project.ProjectTests.test_spike_increases_error) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 1.720s
+
+OK
